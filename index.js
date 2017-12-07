@@ -11,7 +11,7 @@ restService.use(bodyParser.urlencoded({
 
 restService.use(bodyParser.json());
 
-restService.post('/echo', function(req, res) {
+restService.post('/info', function(req, res) {
     var speech = req.body.result && req.body.result.parameters && req.body.result.parameters.playerforename ? req.body.result.parameters.playerforename : "Kein Vorname."
     return res.json({
         speech: speech,
