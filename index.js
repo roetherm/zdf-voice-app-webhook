@@ -12,10 +12,13 @@ restService.use(bodyParser.urlencoded({
 restService.use(bodyParser.json());
 
 restService.post('/info', function(req, res) {
-    var speech = req.body.result && req.body.result.parameters && req.body.result.parameters.playerforename ? req.body.result.parameters.playerforename : "Kein Vorname."
+    var forename = req.body.result && req.body.result.parameters && req.body.result.parameters.playerforename ? req.body.result.parameters.playerforename : "Kein Vorname."
+    var lastname = req.body.result && req.body.result.parameters && req.body.result.parameters.playerlastname ? req.body.result.parameters.playerlastname : "Kein Nachname."
+    var information = req.body.result && req.body.result.parameters && req.body.result.parameters.information ? req.body.result.parameters.information : "Keine Information."
+    var teamname = req.body.result && req.body.result.parameters && req.body.result.parameters.teamname ? req.body.result.parameters.teamname : "Kein Teamname."
     return res.json({
-        speech: speech,
-        displayText: speech,
+        speech: forename + " " + lastname + ". Information: " + information + ". Team: " + teamname + ".",
+        displayText: forename + " " + lastname + ". Information: " + information + ". Team: " + teamname + ".",
         source: 'webhook-echo-sample'
     });
 });
