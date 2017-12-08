@@ -11,8 +11,9 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
-app.get('/info', function(request, response) {
+app.get('/', function(request, response) {
   response.send("Hello, im in.");
+  response.end();
 })
 
 app.post('/info', function(request, response) {
