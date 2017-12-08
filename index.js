@@ -12,8 +12,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 app.get('/', function(request, response) {
-  response.send("Hello, im in.");
-  response.end();
+  console.log("Get success");
 })
 
 app.post('/info', function(request, response) {
