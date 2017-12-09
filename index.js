@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 app.get('/', function(request, response) {
-  console.log("Get success");
-})
+  console.log("Success");
+});
 
 app.post('/info', function(request, response) {
     var forename = request.body.result && request.body.result.parameters && request.body.result.parameters.playerforename ? request.body.result.parameters.playerforename : "Kein Vorname.";
