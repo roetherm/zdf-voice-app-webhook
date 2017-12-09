@@ -1,12 +1,12 @@
 {
-  "name": "webhook-echo-sample",
+  "name": "zdf-voice-app-webhook",
   "version": "1.0.0",
-  "description": "Webhook echo sample",
+  "description": "webhook",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Sunil Syal",
+  "author": "Michael Roether",
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4"

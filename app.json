@@ -1,6 +1,6 @@
 {
-  "name": "Webhook-echo-sample",
-  "description": "Webhook echo sample",
-  "repository": "https://github.com/SunilSyal/Webhook-and-API.AI-Samples.git",
+  "name": "zdf-voice-app-webhook",
+  "description": "webhook",
+  "repository": "https://github.com/roetherm/zdf-voice-app-webhook.git",
   "keywords": ["api.ai", "dialogflow", "natural language"]
 }

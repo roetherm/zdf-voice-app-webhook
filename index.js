@@ -23,7 +23,7 @@ app.post('/info', function(request, response) {
     return response.json({
         speech: forename + " " + lastname + ". Information: " + information + ". Team: " + teamname + ".",
         displayText: forename + " " + lastname + ". Information: " + information + ". Team: " + teamname + ".",
-        source: 'webhook-echo-sample'
+        source: 'zdf-voice-app-webhook'
     });
 });
 
